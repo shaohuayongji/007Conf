@@ -1,3 +1,22 @@
+#香蕉视频
+^https?:\/\/(apple|ios)\.fuliapps\.com\/ url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/xjsp.js
+
+^https?:\/\/ios\.jiaojiaoapps\.com\/ url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/xjsp.js
+
+#91短视频
+^https?:\/\/.+\.my10api\.com url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/91.js
+
+#网易蜗牛读书
+^https?://p\.du\.163\.com/readtime/info.json url reject
+^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info\.json url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/wnyd.js
+
+#用药助手专业版
+^https?:\/\/(i|newdrugs)\.dxy\.cn\/(snsapi\/username\/|app\/user\/(pro\/stat\?|init\?timestamp=)) url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/yyzs.js
+
+#布丁漫画解锁
+^https?:\/\/(bd|bdapp)\.4008109966\.net\/\/index\.php\/api\/User\/userLogin url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/bdmh.js
+
+############Shawn自用############
 #zhihu 跳转
 https?://www\.zhihu\.com/question/ url request-header (\r\n)User-Agent:.+(\r\n) request-header $1User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36$2
 
