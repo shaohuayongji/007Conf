@@ -16,6 +16,9 @@
 #布丁漫画解锁
 ^https?:\/\/(bd|bdapp)\.4008109966\.net\/\/index\.php\/api\/User\/userLogin url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/bdmh.js
 
+# 微信公众号
+https?://mp\.weixin\.qq\.com/mp/getappmsgad\?f= url response-body "advertisement_info":\[.+\],"appid" response-body "advertisement_info":[],"appid"
+
 ############Shawn自用############
 #zhihu 跳转
 https?://www\.zhihu\.com/question/ url request-header (\r\n)User-Agent:.+(\r\n) request-header $1User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36$2
@@ -27,7 +30,7 @@ https?://www\.zhihu\.com/question/ url request-header (\r\n)User-Agent:.+(\r\n) 
 ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad url script-response-body https://Choler.github.io/Surge/Script/WeChat.js
 # wereader 微信读书
 ^https?:\/\/i.weread.qq.com\/pay url script-response-body https://raw.githubusercontent.com/yxiaocai/quanx/master/js/iweread.js
-
+^https?://i\.weread\.qq\.com/pay/memberCardSummary url response-body "remainTime":.+,"isAutoRenewable" response-body "remainTime":86313600,"isAutoRenewable"
 #YYeTs
 ^http://ctrl.playcvn.com/app/(init|ads) url script-response-body https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/YYeTs.js
 
