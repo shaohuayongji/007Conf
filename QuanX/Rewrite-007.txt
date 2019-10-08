@@ -12,7 +12,7 @@
 
 
 #M(微信读书)
-#^https?:\/\/i\.weread\.qq.com\/pay\/memberCardSummary\?pf  url script-response-body https://raw.githubusercontent.com/jpcnmm/007Conf/master/QuanX/Scripts/weread.js
+^https?:\/\/i\.weread\.qq.com\/pay\/memberCardSummary\?pf  url script-response-body https://raw.githubusercontent.com/jpcnmm/007Conf/master/QuanX/Scripts/weread.js
 
 #用药助手专业版
 ^https?:\/\/(i|newdrugs)\.dxy\.cn\/(snsapi\/username\/|app\/user\/(pro\/stat\?|init\?timestamp=)) url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/yyzs.js
@@ -33,8 +33,9 @@ https?://www\.zhihu\.com/question/ url request-header (\r\n)User-Agent:.+(\r\n) 
 # wechat 朋友圈
 ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad url script-response-body https://Choler.github.io/Surge/Script/WeChat.js
 # wereader 微信读书
-^https?:\/\/i.weread.qq.com\/pay url script-response-body 
-^https?://i\.weread\.qq\.com/pay/memberCardSummary url response-body "remainTime":.+,"isAutoRenewable" response-body "remainTime":86313600,"isAutoRenewable"
+#^https?:\/\/i.weread.qq.com\/pay url script-response-body 
+https://raw.githubusercontent.com/yxiaocai/quanx/master/js/iweread.js
+#^https?://i\.weread\.qq\.com/pay/memberCardSummary url response-body "remainTime":.+,"isAutoRenewable" response-body "remainTime":86313600,"isAutoRenewable"
 #YYeTs
 ^http://ctrl.playcvn.com/app/(init|ads) url script-response-body https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/YYeTs.js
 
