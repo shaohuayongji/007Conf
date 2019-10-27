@@ -9,6 +9,8 @@ hostname = api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, api.
 # 微信公众号
 ^https?://mp.weixin.qq.com/mp/getappmsgad url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js
 
+#drops
+^https:\/\/lambda\.us-east-1\.amazonaws\.com\/2015-03-31\/functions\/prod-4-syncPurchases\/invocations$ url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/drops.js
 
 
 
